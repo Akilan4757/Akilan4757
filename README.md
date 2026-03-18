@@ -2,7 +2,7 @@
 
 👋 Hey there, I’m **Akilan A**
 
-🔭 Chief Operating Officer at **DaleEdge** and a cybersecurity practitioner focused on offensive security and digital forensics.
+🔭 cybersecurity practitioner focused on offensive security and digital forensics.
 💻 I build security tools, analyze vulnerabilities, and work on real world cybersecurity challenges.
 🌱 Currently focused on security research, reverse engineering, and building practical forensic tooling.
 🏆 Ranked in the **Top 2% globally on TryHackMe** with **165+ rooms completed**.
