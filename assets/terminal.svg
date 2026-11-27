@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="270" viewBox="0 0 900 270" role="img" aria-labelledby="title desc">
+  <title id="title">Animated whoami terminal</title>
+  <desc id="desc">A terminal types Akilan A, cybersecurity education, and SOC Analyst L1 focus.</desc>
+  <style>
+    .bg{fill:#0D1117}.frame{fill:none;stroke:#00D68F;stroke-width:2}.bar{fill:#161B22}
+    .main{fill:#E6EDF3;font:600 17px 'Consolas','Monaco',monospace}
+    .prompt{fill:#00D68F}.value{fill:#00D9FF}
+    .cursor{fill:#00FF9C;animation:blink 1s steps(2,start) infinite}
+    @keyframes blink{to{visibility:hidden}}
+    @media(prefers-color-scheme:light){
+      .bg{fill:#F6F8FA}.frame{stroke:#00876C}.bar{fill:#EAEFF2}
+      .main{fill:#17212B}.prompt{fill:#007E59}.value{fill:#006C83}.cursor{fill:#00876C}
+    }
+    @media(prefers-reduced-motion:reduce){.cursor{animation:none}}
+  </style>
+  <defs>
+    <clipPath id="line1"><rect x="42" y="128" width="500" height="28"><animate attributeName="width" from="0" to="500" dur="1.1s" fill="freeze"/></rect></clipPath>
+    <clipPath id="line2"><rect x="42" y="176" width="640" height="28"><animate attributeName="width" from="0" to="640" begin="1.1s" dur="1.8s" fill="freeze"/></rect></clipPath>
+    <clipPath id="line3"><rect x="42" y="224" width="790" height="28"><animate attributeName="width" from="0" to="790" begin="2.9s" dur="2.2s" fill="freeze"/></rect></clipPath>
+  </defs>
+  <rect class="bg" x="1" y="1" width="898" height="268" rx="18"/>
+  <rect class="frame" x="1" y="1" width="898" height="268" rx="18"/>
+  <path class="bar" d="M19 2h862a18 18 0 0 1 18 18v29H1V20A18 18 0 0 1 19 2Z"/>
+  <circle cx="25" cy="25" r="6" fill="#FF5F57"/>
+  <circle cx="47" cy="25" r="6" fill="#FEBC2E"/>
+  <circle cx="69" cy="25" r="6" fill="#28C840"/>
+  <text x="91" y="31" font-family="monospace" font-size="14" fill="#8B949E">akilan@profile: ~</text>
+  <text class="main prompt" x="42" y="105">$ whoami</text>
+  <text class="main value" x="42" y="153" clip-path="url(#line1)">Akilan A · Aspiring SOC Analyst</text>
+  <text class="main prompt" x="42" y="201" clip-path="url(#line2)">B.E. Cybersecurity · Sethu Institute of Technology · 2023–2027</text>
+  <text class="main value" x="42" y="249" clip-path="url(#line3)">Focus: SOC Analyst L1 · alert triage · log analysis · incident response</text>
+  <rect class="cursor" x="42" y="231" width="9" height="19" rx="1"><animate attributeName="x" from="42" to="810" begin="2.9s" dur="2.2s" fill="freeze"/></rect>
+</svg>

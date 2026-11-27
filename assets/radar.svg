@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="360" viewBox="0 0 360 360" role="img" aria-labelledby="title desc">
+  <title id="title">Decorative cyber-security radar</title>
+  <desc id="desc">A neon green and cyan radar with a rotating sweep. It is an illustration, not a live scan.</desc>
+  <style>
+    .bg{fill:#0D1117}.ring{fill:none;stroke:#00D68F;stroke-opacity:.55;stroke-width:1.5}
+    .axis{stroke:#00D9FF;stroke-opacity:.28;stroke-width:1}
+    .sweep{fill:url(#beam);transform-origin:180px 180px;animation:rotate 7s linear infinite}
+    .dot{fill:#00FF9C;filter:url(#glow)}
+    .caption{fill:#00D9FF;font:12px monospace;letter-spacing:2px}
+    @keyframes rotate{to{transform:rotate(360deg)}}
+    @media(prefers-color-scheme:light){
+      .bg{fill:#F6F8FA}.ring{stroke:#00876C}.axis{stroke:#007E87}
+      .caption{fill:#006C83}.dot{fill:#00876C}
+    }
+    @media(prefers-reduced-motion:reduce){.sweep{animation:none;opacity:.45}}
+  </style>
+  <defs>
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#00FF9C" stop-opacity=".65"/>
+      <stop offset="1" stop-color="#00D9FF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <circle class="bg" cx="180" cy="180" r="174"/>
+  <circle class="ring" cx="180" cy="180" r="136"/>
+  <circle class="ring" cx="180" cy="180" r="91"/>
+  <circle class="ring" cx="180" cy="180" r="46"/>
+  <path class="axis" d="M180 20v320M20 180h320M67 67l226 226M293 67 67 293"/>
+  <path class="sweep" d="M180 180V44A136 136 0 0 1 276.2 83.8Z"/>
+  <circle class="dot" cx="231" cy="119" r="4"/>
+  <circle class="dot" cx="127" cy="205" r="3"/>
+  <circle class="dot" cx="195" cy="272" r="3"/>
+  <circle cx="180" cy="180" r="5" fill="#00D9FF"/>
+  <text class="caption" x="180" y="345" text-anchor="middle">SECURITY OPERATIONS</text>
+</svg>

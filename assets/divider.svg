@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="36" viewBox="0 0 900 36" role="img" aria-labelledby="title desc">
+  <title id="title">Pulsing neon section divider</title>
+  <desc id="desc">A cyan and green horizontal divider with a gently pulsing center light.</desc>
+  <defs>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop offset="0" stop-color="#00D68F" stop-opacity="0"/>
+      <stop offset=".25" stop-color="#00D68F"/>
+      <stop offset=".5" stop-color="#00D9FF"/>
+      <stop offset=".75" stop-color="#00D68F"/>
+      <stop offset="1" stop-color="#00D68F" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-300%" width="200%" height="700%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    .line{stroke:url(#line);stroke-width:2;filter:url(#glow)}
+    .pulse{fill:#00D9FF;filter:url(#glow);animation:pulse 2.4s ease-in-out infinite}
+    @keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}
+    @media(prefers-color-scheme:light){.line{opacity:.85}.pulse{fill:#007E87}}
+    @media(prefers-reduced-motion:reduce){.pulse{animation:none;opacity:.8}}
+  </style>
+  <path class="line" d="M0 18H900"/>
+  <circle class="pulse" cx="450" cy="18" r="4"/>
+</svg>
